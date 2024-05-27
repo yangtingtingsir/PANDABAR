@@ -415,7 +415,9 @@ class SceneButton
     {
         this.clickEvent.add(action, context);
     }
-
+    click(){
+        this.clickEvent.invoke();
+    }
     release()
     {
         this.pressed = false;
