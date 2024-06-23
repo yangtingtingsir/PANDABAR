@@ -1,34 +1,55 @@
-<!DOCTYPE html>
-<html>
-	<head>
-        <style type = "text/css">
-            body{
-                background-image: url("png/Background_1.png"); /* The image used */
-                background-color: #cccccc; /* Used if the image is unavailable */  /* background: #a3a3a3; */
-                background-position: center; /* Center the image */
-                background-repeat: no-repeat; /* Do not repeat the image */
-                background-size: cover; /* Resize the background image to cover the entire container */
-                padding: 0px;
-                margin: 0px;
-            }
-            canvas{
-                display:block;
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        </style>
-        <script src = "js/phaser.js"></script>      
-    </head>
-	<body>
-            <!-- remove or comment unused configs before publish --> 
-        <script src = "js/slotConfig1x3.js"></script>                
-        <script src = "js/mkutils.js"></script>
-        <script src = "js/popups.js"></script>
-        <script src = "js/state_machine.js"></script>
-        <script src = "js/slot_classes.js"></script>
-	    <script src = "js/slotGame.js"></script>
-	</body>
+
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="user-scalable=no">
+
+    <title>WILD WEST Slot Machine</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/game.css">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" type="image/png" href="assets/favicon/icon-36x36.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/favicon/icon-48x48.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicon/icon-72x72.png" sizes="72x72">
+
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-36x36.png" sizes="16x16">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-48x48.png" sizes="32x32">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon/icon-512x512.png" sizes="512x512">
+
+
+
+
+
+
+</head>
+<body style="background-color: #000000">
+
+
+
+
+
+    <div id="wrongRotation">
+        <img src="assets/img_480/rotate_screen.png" alt=""/>
+    </div>
+
+    <div id="game">
+
+
+        <script src="js/game.js"></script>
+        
+    </div>
+    <div class="font_preload" style="opacity: 0">
+        <span style="font-family: 'gameFont', Arial, sans-serif;"></span>
+    </div>
+
+
+ 
+
+</body>
 </html>
